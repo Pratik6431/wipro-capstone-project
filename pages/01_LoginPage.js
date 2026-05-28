@@ -13,7 +13,7 @@ class LoginPage {
         this.loginButton = page.getByRole('button', { name: 'Log In' });
         this.registrationLink = page.getByRole('link', { name: 'Register' });
 
-        // Registration Form Locators (Using standard robust name/id selectors)
+        // Registration Form Locators
         this.firstNameInput = page.locator('input[name="customer.firstName"]');
         this.lastNameInput = page.locator('input[name="customer.lastName"]');
         this.addressInput = page.locator('input[name="customer.address.street"]');
@@ -26,7 +26,7 @@ class LoginPage {
         // Credentials inputs for registration
         this.regUsernameInput = page.locator('input[name="customer.username"]');
         this.regPasswordInput = page.locator('input[name="customer.password"]');
-        // English Comment: Standardize the confirm password locator using repeatedPassword ID
+        // Standardize the confirm password locator using repeatedPassword ID
         this.regConfirmPasswordInput = page.locator('#repeatedPassword');
         this.registerButton = page.locator('input[value="Register"]');
     }
