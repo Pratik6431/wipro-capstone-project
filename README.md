@@ -29,23 +29,23 @@ The project implements the **Page Object Model (POM)** pattern to clean separate
 ```text
 wipro-capstone-project/
 ├── pages/                 # Page Object Classes (Locators & Core Actions)
-│   ├── LoginPage.js
-│   ├── NewAccountPage.js
-│   ├── AccountOverviewPage.js
-│   ├── TransferFundsPage.js
-│   ├── BillPayPage.js
-│   ├── TransactionSearchPage.js
-│   ├── CustomerSupportPage.js
-│   └── AdminPage.js
+│   ├── 01_LoginPage.js
+│   ├── 02_NewAccountPage.js
+│   ├── 03_AccountOverviewPage.js
+│   ├── 04_TransferFundsPage.js
+│   ├── 05_BillPayPage.js
+│   ├── 06_TransactionSearchPage.js
+│   ├── 07_CustomerSupportPage.js
+│   └── 08_AdminPage.js
 ├── tests/                 # 120 Automated Test Scripts (.spec.js files)
-│   ├── authentication.spec.js
-│   ├── newAccount.spec.js
-│   ├── accountOverview.spec.js
-│   ├── transferFunds.spec.js
-│   ├── billPay.spec.js
-│   ├── transactionSearch.spec.js
-│   ├── customerSupport.spec.js
-│   └── internalApi.spec.js
+│   ├── 01_authentication.spec.js
+│   ├── 02_newAccount.spec.js
+│   ├── 03_accountOverview.spec.js
+│   ├── 04_transferFunds.spec.js
+│   ├── 05_billPay.spec.js
+│   ├── 06_transactionSearch.spec.js
+│   ├── 07_customerSupport.spec.js
+│   └── 08_internalApi.spec.js
 ├── playwright.config.js   # Main Playwright global test execution properties
 ├── package.json           # Project metadata, custom CLI scripts, and dependencies
 └── README.md              # Project documentation (This file)
