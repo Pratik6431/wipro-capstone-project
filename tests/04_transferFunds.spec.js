@@ -4,6 +4,7 @@ const { TransferFundsPage } = require('../pages/04_TransferFundsPage');
 
 test.describe('Service 4: Account-to-Account Transfer Funds - 15 Parametric Scenarios', () => {
 
+    // Transfer Funds Scenarios Matrix
     const transferScenarios = [
         { id: 'TC-TX-01', amount: '500', desc: 'Standard Positive Verification Flow' },
         { id: 'TC-TX-02', amount: '', desc: 'Negative Handling: Empty Input Matrix' },

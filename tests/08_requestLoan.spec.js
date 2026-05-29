@@ -4,7 +4,7 @@ const { RequestLoanPage } = require('../pages/08_RequestLoanPage');
 
 test.describe('Service 8: Request Loan Service - Full 15 Parametric Test Matrix', () => {
 
-    // Exactly 15 industrial testing scenarios defined as a data-driven matrix for compliance
+    // Loan Scenarios Matrix
     const loanScenarios = [
         { id: 'TC-LOAN-01', amount: '10000', downPayment: '2000', desc: 'Standard Positive Verification Flow' },
         { id: 'TC-LOAN-02', amount: '', downPayment: '500', desc: 'Negative Handling: Empty Input Matrix' },

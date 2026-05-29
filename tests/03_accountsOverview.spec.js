@@ -4,6 +4,7 @@ const { AccountsOverviewPage } = require('../pages/03_AccountsOverviewPage');
 
 test.describe('Service 3: Accounts Overview Balance Grid - 15 Parametric Scenarios', () => {
 
+    // Dashboard Scenarios Matrix
     const dashboardScenarios = [
         { id: 'TC-DASH-01', targetId: '998877', desc: 'Standard Positive Verification Flow' },
         { id: 'TC-DASH-02', targetId: '', desc: 'Negative Handling: Empty Input Matrix' },

@@ -37,7 +37,6 @@ class BillPayPage {
        
         await this.billPayLink.click();
         await this.page.waitForTimeout(1000);
-
         await this.payeeNameInput.fill(billDetails.name);
         await this.addressInput.fill(billDetails.address);
         await this.cityInput.fill(billDetails.city);
@@ -47,7 +46,6 @@ class BillPayPage {
         await this.accountInput.fill(billDetails.accountNumber);
         await this.verifyAccountInput.fill(billDetails.accountNumber);
         await this.amountInput.fill(billDetails.amount);
-
         await this.sendPaymentButton.click();
     }
 }

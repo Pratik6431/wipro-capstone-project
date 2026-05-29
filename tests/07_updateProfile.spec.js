@@ -3,6 +3,7 @@ const { LoginPage } = require('../pages/01_LoginPage');
 
 test.describe('Service 7: Update Profile Contact Information - 15 Parametric Scenarios', () => {
 
+    // Profile Update Scenarios Matrix
     const profileScenarios = [
         { id: 'TC-PROF-01', phone: '9111122222', desc: 'Standard Positive Verification Flow' },
         { id: 'TC-PROF-02', phone: '000000', desc: 'Negative Handling: Empty Input Matrix' },

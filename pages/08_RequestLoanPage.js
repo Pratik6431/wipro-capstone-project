@@ -30,18 +30,12 @@ class RequestLoanPage {
      * @param {string} accountId - Source account validation token
      */
     async applyForLoan(amount, downPayment, accountId) {
-        // Step 1: Open the Request Loan sidebar layout component
+        
         await this.requestLoanLink.click();
-        await this.page.waitForTimeout(1000); // Stabilization wait for form layout sync
-
-        // Step 2: Populate required numerical boundary constraints fields
+        await this.page.waitForTimeout(1000);
         await this.loanAmountInput.fill(amount);
         await this.downPaymentInput.fill(downPayment);
-
-        // Step 3: Select source account link context
         await this.fromAccountSelect.selectOption(accountId);
-
-        // Step 4: Click the logical execution trigger action button
         await this.applyNowButton.click();
     }
 }

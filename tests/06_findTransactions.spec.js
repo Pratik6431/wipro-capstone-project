@@ -4,6 +4,7 @@ const { FindTransactionsPage } = require('../pages/06_FindTransactionsPage');
 
 test.describe('Service 6: Advanced Find Transactions Filter - 15 Parametric Scenarios', () => {
 
+    // Find Transactions Scenarios Matrix
     const findScenarios = [
         { id: 'TC-FIND-01', amt: '500', desc: 'Standard Positive Verification Flow' },
         { id: 'TC-FIND-02', amt: '', desc: 'Negative Handling: Empty Input Matrix' },

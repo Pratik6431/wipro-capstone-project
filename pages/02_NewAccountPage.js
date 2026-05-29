@@ -24,7 +24,6 @@ class NewAccountPage {
         // Click menu link
         await this.openNewAccountLink.click();
 
-        // Handle selector matching values cleanly
         if (accountType && accountType.toUpperCase() === 'SAVINGS') {
             await this.accountTypeDropdown.selectOption({ value: '1' }); // '1' is for SAVINGS
         } else {

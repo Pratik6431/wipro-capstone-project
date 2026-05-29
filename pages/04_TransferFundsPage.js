@@ -7,7 +7,7 @@ class TransferFundsPage {
     constructor(page) {
         this.page = page;
 
-        // Locators mapping using clean attributes and element paths
+        // Locators mapping
         this.transferFundsLink = page.getByRole('link', { name: 'Transfer Funds' });
         this.amountInput = page.locator('#amount');
         this.fromAccountDropdown = page.locator('#fromAccountId');

@@ -26,6 +26,7 @@ class LoginPage {
         // Credentials inputs for registration
         this.regUsernameInput = page.locator('input[name="customer.username"]');
         this.regPasswordInput = page.locator('input[name="customer.password"]');
+        
         // Standardize the confirm password locator using repeatedPassword ID
         this.regConfirmPasswordInput = page.locator('#repeatedPassword');
         this.registerButton = page.locator('input[value="Register"]');

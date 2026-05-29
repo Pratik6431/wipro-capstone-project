@@ -4,6 +4,7 @@ const { BillPayPage } = require('../pages/05_BillPayPage');
 
 test.describe('Service 5: Utility Bill Payment Service - 15 Parametric Scenarios', () => {
 
+    // Bill Pay Scenarios Matrix
     const billScenarios = [
         { id: 'TC-BP-01', name: 'Bangalore Electricity', amount: '120', desc: 'Standard Positive Verification Flow' },
         { id: 'TC-BP-02', name: '', amount: '120', desc: 'Negative Handling: Empty Input Matrix' },

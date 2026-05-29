@@ -36,6 +36,7 @@ class AccountsOverviewPage {
         const rowCount = await this.tableRows.count();
         let isFound = false;
 
+        // Iterate through each row and check if the accountId is present in the text
         for (let i = 0; i < rowCount; i++) {
             const rowText = await this.tableRows.nth(i).innerText();
             if (rowText.includes(accountId)) {

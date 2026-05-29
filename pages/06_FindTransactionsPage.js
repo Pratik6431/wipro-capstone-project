@@ -35,11 +35,8 @@ class FindTransactionsPage {
         
         await this.findTransactionsLink.click();
         await this.page.waitForTimeout(1000);
-
         await this.accountSelectDropdown.selectOption(accountId);
-
         await this.amountInput.fill(amount);
-
         await this.findByAmountButton.click();
     }
 }

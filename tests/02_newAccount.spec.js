@@ -4,6 +4,7 @@ const { NewAccountPage } = require('../pages/02_NewAccountPage');
 
 test.describe('Service 2: Open New Bank Account - 15 Parametric Scenarios', () => {
 
+    // Account Creation Scenarios Matrix
     const accountScenarios = [
         { id: 'TC-ACC-01', type: 'SAVINGS', desc: 'Standard Positive Verification Flow' },
         { id: 'TC-ACC-02', type: '', desc: 'Negative Handling: Empty Input Matrix' },

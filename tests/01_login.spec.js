@@ -3,6 +3,7 @@ const { LoginPage } = require('../pages/01_LoginPage');
 
 test.describe('Service 1: Authentication & User Registration - 15 Parametric Scenarios', () => {
 
+    // Registration Scenarios Matrix
     const registrationScenarios = [
         { id: 'TC-REG-01', firstName: 'Pratik', lastName: 'Kumar', desc: 'Standard Positive Verification Flow' },
         { id: 'TC-REG-02', firstName: '', lastName: 'Kumar', desc: 'Negative Handling: Empty Input Matrix' },

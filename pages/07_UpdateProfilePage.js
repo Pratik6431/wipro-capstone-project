@@ -32,11 +32,9 @@ class UpdateProfilePage {
      * @param {Object} newDetails - Object holding the updated string coordinates
      */
     async updateContactInformation(newDetails) {
-        // Step 1: Open the profile update section components link
+        
         await this.updateProfileLink.click();
-        await this.page.waitForTimeout(1000); // Stabilization wait for network sync state
-
-        // Step 2: Overwrite existing form fields using .fill()
+        await this.page.waitForTimeout(1000);
         await this.firstNameInput.fill(newDetails.firstName);
         await this.lastNameInput.fill(newDetails.lastName);
         await this.addressInput.fill(newDetails.address);
@@ -44,8 +42,6 @@ class UpdateProfilePage {
         await this.stateInput.fill(newDetails.state);
         await this.zipCodeInput.fill(newDetails.zipCode);
         await this.phoneInput.fill(newDetails.phone);
-
-        // Step 3: Trigger the final profile data persistence update button
         await this.updateProfileButton.click();
     }
 }
